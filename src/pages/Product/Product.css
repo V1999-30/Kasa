@@ -1,0 +1,124 @@
+.Fiche {
+    color: #ff6060;
+    margin: 0px 75px;
+}
+
+.house-owner {
+    display: inline-flex;
+    width: 100%;
+}
+
+.house-owner > div {
+    flex: 1 0 auto;
+}
+
+.house-info {
+    flex-direction: column;
+}
+
+.house-title {
+    font-size: 40px;
+}
+
+.house-location {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.tag{
+    display: inline-flex;
+    align-items: center;
+    background-color: #ff6060;
+    border-radius: 20px;
+    color: #FFF;
+    margin: 10px;
+    padding: 10px;
+}
+.owner-info {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.owner-name {
+    font-size: 18px;
+    margin-right: 10px;
+    text-align: right;
+    width: 100px;
+}
+
+.owner-picture {
+    border-radius: 50%;
+    height: 64px;
+    object-fit: cover;
+    width: 64px;
+}
+
+.note {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.note img {
+    width: 30px;
+    margin-top: 25px; 
+}
+.etoile {
+    height: 30px;
+    width: 30px;
+}
+
+.stuff-description {
+    display: inline-flex;
+    gap: 0 75px;
+    line-height: 22.5px;
+    list-style: none;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.stuff-description > .dropdown {
+    width: 50%;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px){
+    .Fiche{
+        margin: 0px 6px;
+    }
+
+    .tag{
+        margin: 3px;
+        padding: 4px;
+        font-size: 11px;
+    }
+
+    .house-owner{
+        display: block;
+    }
+
+    .owner-rating{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .owner-info{
+        margin-bottom: 0;
+    }
+
+    .note img{
+        margin-top: 0;
+        width: 15px;
+    }
+
+    .stuff-description{
+        display: block;
+    }
+
+    .stuff-description > .dropdown {
+        width: 100%;
+    }
+}

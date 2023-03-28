@@ -1,0 +1,23 @@
+.About{
+    margin: 0px 75px;
+}
+
+#dropdown-Fiabilité, #dropdown-Respect, #dropdown-Service, #dropdown-Sécurité{
+    border-radius: 5px;
+    margin: 25px 250px;
+    text-align: left;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px){
+    .About {
+        margin: 0px 6px;
+    }
+
+    #dropdown-Fiabilité, #dropdown-Respect, #dropdown-Service, #dropdown-Sécurité{
+        margin: 0;
+    }
+
+    .bannerAbout{
+        height: 330px;
+    }
+}

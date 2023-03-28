@@ -1,0 +1,16 @@
+footer{
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+    margin-top: 55px;
+    height: 100px;
+}
+
+footer img{
+    width: 8%;
+    padding-top: 12px;
+}
+
+footer p{
+    color: #FFF;
+}
