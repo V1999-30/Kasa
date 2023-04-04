@@ -37,3 +37,34 @@ color: #fc6464;
     font-size: 17px;
   }
 }
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+  header {
+    margin: 15px 73px;
+    width: 81%
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1439px){
+  header {
+    margin: 15px 70px;
+    width: 85%;
+  }
+}
+
+@media all and (min-width: 1440px) and (max-width: 2559px){
+  header {
+    width: 89%;
+  }
+}
+
+@media all and (min-width: 2560px){
+  header img{
+    width: 350px;
+  }
+
+  .lien-site {
+    padding: 45px 0px 0px 45px;
+    font-size: 45px;
+  }
+}

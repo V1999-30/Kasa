@@ -73,3 +73,9 @@
         font-size: 15px;
     }
 }
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+    .fleche{
+        width: 25px;
+    }
+}
