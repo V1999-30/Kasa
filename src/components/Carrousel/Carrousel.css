@@ -1,7 +1,7 @@
 .carrousel {
     display: block;
     height: 415px;
-    margin: auto auto 30px auto;
+    margin: 0 0 30px 0;
     position: relative;
     width: 100%;
 }
@@ -39,7 +39,7 @@
     display: block;
 }
 
-.photo-number{
+.photo-number p{
     position: absolute;
     bottom: 0%;
     left: 50%;
@@ -77,5 +77,16 @@
 @media all and (min-width: 768px) and (max-width: 1023px){
     .fleche{
         width: 25px;
+    }
+}
+
+@media all and (min-width: 2560px){
+
+    .carrousel {
+        margin: 0 0 30px 0;
+        height: 565px;
+    }
+    .carrousel-img{
+        height: 100%;
     }
 }

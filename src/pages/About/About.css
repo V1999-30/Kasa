@@ -21,3 +21,16 @@
         height: 330px;
     }
 }
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+    #dropdown-Fiabilité, #dropdown-Respect, #dropdown-Service, #dropdown-Sécurité{
+        margin: 20px 0px;
+        text-align: center;
+    }
+}
+
+@media all and (min-width:1024px) and (max-width: 1439px){
+    #dropdown-Fiabilité, #dropdown-Respect, #dropdown-Service, #dropdown-Sécurité{
+        margin: 25px 100px;
+    }
+  }

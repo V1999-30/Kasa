@@ -132,3 +132,31 @@
         width: 100%;
     }
 }
+
+@media all and (min-width: 2560px) {
+    .house-title{
+        font-size: 60px;
+    }
+
+    .house-location{
+        font-size: 38px;
+    }
+
+    .tag{
+        font-size: 25px;
+    }
+
+    .owner-name{
+        font-size: 40px;
+        margin-right: 78px;
+    }
+
+    .owner-picture{
+        height: 128px;
+        width: 128px;
+    }
+
+    .note img {
+        width: 60px;
+    }
+}

@@ -59,12 +59,16 @@ color: #fc6464;
 }
 
 @media all and (min-width: 2560px){
+  header {
+    width: 94%;
+  }
+
   header img{
-    width: 350px;
+    width: 300px;
   }
 
   .lien-site {
-    padding: 45px 0px 0px 45px;
-    font-size: 45px;
+    padding: 50px 0px 0px 45px;
+    font-size: 35px;
   }
 }
