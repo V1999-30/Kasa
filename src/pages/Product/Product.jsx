@@ -4,11 +4,11 @@ import { useParams, Navigate } from 'react-router-dom';
 import HousingListing from "../../assets/api/houses.json";
 import Menu from "../../components/Menu/Menu";
 import menuLogo from "../../assets/img/logo.jpg";
-import Carrousel from "../../components/Carrousel/Carrousel";
+import Slideshow from "../../components/Slideshow/Slideshow";
 import Tag from "../../components/Tag/Tag";
 import Rating from "../../assets/img/Etoile.png";
 import NoStar from "../../assets/img/EtoileVide.png";
-import Dropdown from "../../components/Dropdown/Dropdown";
+import Collapse from "../../components/Collapse/Collapse";
 import Footer from "../../components/Footer/Footer";
 import FooterLogo from "../../assets/img/logo_footer.png";
 
@@ -51,7 +51,7 @@ function Product() {
                         <Menu image={menuLogo}/>
                     </div>
                     <div className="Fiche">
-                        <Carrousel images={pageProduct?.pictures}/>
+                        <Slideshow images={pageProduct?.pictures}/>
                         <div className="house-owner">
                             <div className="house-info">
                                 <span className="house-title">{pageProduct?.title}</span>
@@ -71,8 +71,8 @@ function Product() {
                             </div>
                         </div>
                         <div className="stuff-description">
-                            <Dropdown titre="Description" description={pageProduct?.description}/>
-                            <Dropdown titre="Equipements" description={housingStuff}/>
+                            <Collapse titre="Description" description={pageProduct?.description}/>
+                            <Collapse titre="Equipements" description={housingStuff}/>
                         </div>
                     </div>
                     <div className="footer">

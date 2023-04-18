@@ -2,7 +2,7 @@
     margin: 0px 75px;
 }
 
-#dropdown-Fiabilité, #dropdown-Respect, #dropdown-Service, #dropdown-Sécurité{
+#collapse-Fiabilité, #collapse-Respect, #collapse-Service, #collapse-Sécurité{
     border-radius: 5px;
     margin: 25px 250px;
     text-align: left;
@@ -13,7 +13,7 @@
         margin: 0px 6px;
     }
 
-    #dropdown-Fiabilité, #dropdown-Respect, #dropdown-Service, #dropdown-Sécurité{
+    #collapse-Fiabilité, #collapse-Respect, #collapse-Service, #collapse-Sécurité{
         margin: 0;
     }
 
@@ -23,14 +23,14 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px){
-    #dropdown-Fiabilité, #dropdown-Respect, #dropdown-Service, #dropdown-Sécurité{
+    #collapse-Fiabilité, #collapsen-Respect, #collapse-Service, #collapse-Sécurité{
         margin: 20px 0px;
         text-align: center;
     }
 }
 
 @media all and (min-width:1024px) and (max-width: 1439px){
-    #dropdown-Fiabilité, #dropdown-Respect, #dropdown-Service, #dropdown-Sécurité{
+    #collapse-Fiabilité, #collapse-Respect, #collapse-Service, #collapse-Sécurité{
         margin: 25px 100px;
     }
   }

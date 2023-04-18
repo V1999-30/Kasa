@@ -1,10 +1,10 @@
-.dropdown {
+.collapse {
     border-radius: 5px;
     margin-bottom: 35px;
     text-align: left;
   }
   
-.header-dropdown {
+.header-collapse {
   align-items: center;
   background-color: #ff6060;
   border-radius: 10px;
@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-.titre-dropdown {
+.titre-collapse {
   color: #ffffff;
   height: 50px;
   margin: 5px 10px;
@@ -20,22 +20,22 @@
   align-items: center;
 }
 
-.fleche-dropdown {
+.fleche-collapse {
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
   width: 100%;
 }
-.fleche-dropdown:hover {
+.fleche-collapse:hover {
     cursor: pointer;
 }
 
-.fleche-dropdown.false {
+.fleche-collapse.false {
   justify-content: start;
   transform: rotate(-180deg);
 }
 
-.description-dropdown {
+.description-collapse {
   background-color: #f6f6f6;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -44,23 +44,24 @@
   margin-top: -10px;
   min-height: 100px;
   padding: 25px 10px 10px 10px;
+  font-size: 25px;
 }
 
 @media all and (min-width: 320px) and (max-width: 767px){
-  .header-dropdown, .description-dropdown{
+  .header-collapse, .description-collapse{
     margin-bottom: 15px;
   }
 }
 
 @media all and (min-width:768px) and (max-width:1023px){
-  .header-dropdown{
+  .header-collapse{
     width: 85%;
   }
 }
 
 @media all and (min-width: 2560px){
 
-  .titre-dropdown{
+  .titre-collapse{
     height: 65px;
     font-size: 30px;
   }

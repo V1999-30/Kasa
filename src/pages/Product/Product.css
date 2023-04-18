@@ -80,7 +80,7 @@
     width: 100%;
 }
 
-.stuff-description > .dropdown {
+.stuff-description > .collapse {
     width: 50%;
 }
 
@@ -118,7 +118,7 @@
         display: block;
     }
 
-    .stuff-description > .dropdown {
+    .stuff-description > .collapse {
         width: 100%;
     }
 }
@@ -128,7 +128,7 @@
         display: block;
     }
 
-    .stuff-description > .dropdown{
+    .stuff-description > .collapse{
         width: 100%;
     }
 }
