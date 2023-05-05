@@ -17,7 +17,10 @@ function Home () {
             <main>
             <Banner image={bannerLogo} texte="Chez vous, partout et ailleurs"/>
             <div id="housing">
-                {HousingListing.map((house) => <NavLink key={house.id} to={"./Logement/"+house.id+"/#"}><Rent key={house.id} id={house.id} image={house.cover} titre={house.title} /></NavLink>)}
+                {HousingListing.map((house) => 
+                <NavLink key={house.id} to={"./Logement/"+house.id+"/#"}>
+                    <Rent id={house.id} image={house.cover} titre={house.title} />
+                </NavLink>)}
             </div>
             </main>
             <Footer image={FooterLogo}/>
