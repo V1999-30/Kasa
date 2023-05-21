@@ -22,7 +22,7 @@ function Product() {
     const tagsProduct = pageProduct?.tags.map((tags, index) => {
         return <Tag key={index} nom={tags} />
     });
-
+   
     /* Notes */
     let houseRating = [];
     let fullStars = true;
@@ -43,45 +43,41 @@ function Product() {
     })
 
     return(
-        <>
-            {
-                pageProduct ? (
-                <div>
-                    <div className="menu">
-                        <Menu image={menuLogo}/>
-                    </div>
-                    <div className="Fiche">
-                        <Slideshow images={pageProduct?.pictures}/>
-                        <div className="house-owner">
-                            <div className="house-info">
-                                <span className="house-title">{pageProduct?.title}</span>
-                                <span className="house-location">{pageProduct?.location}</span>
-                                <div className="tags">
-                                    {tagsProduct}
-                                </div>
-                            </div>
-                            <div className="owner-rating">
-                                <div className="owner-info">
-                                    <span className="owner-name">{pageProduct?.host.name}</span>
-                                    <img className="owner-picture" src={pageProduct?.host.picture} alt="Propriétaire"/>
-                                </div>
-                                <div className="note">
-                                    {houseRating}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="stuff-description">
-                            <Collapse titre="Description" description={pageProduct?.description}/>
-                            <Collapse titre="Equipements" description={housingStuff}/>
+        pageProduct ? (
+        <div>
+            <div className="menu">
+                <Menu image={menuLogo}/>
+            </div>
+            <div className="Fiche">
+                <Slideshow images={pageProduct?.pictures}/>
+                <div className="house-owner">
+                    <div className="house-info">
+                        <span className="house-title">{pageProduct?.title}</span>
+                        <span className="house-location">{pageProduct?.location}</span>
+                        <div className="tags">
+                            {tagsProduct}
                         </div>
                     </div>
-                    <div className="footer">
-                        <Footer image={FooterLogo}/>
+                    <div className="owner-rating">
+                        <div className="owner-info">
+                            <span className="owner-name">{pageProduct?.host.name}</span>
+                            <img className="owner-picture" src={pageProduct?.host.picture} alt="Propriétaire"/>
+                        </div>
+                        <div className="note">
+                            {houseRating}
+                        </div>
                     </div>
                 </div>
-                ) : <Navigate replace to="/404"/>
-            }
-        </>
+                <div className="stuff-description">
+                    <Collapse titre="Description" description={pageProduct?.description}/>
+                    <Collapse titre="Equipements" description={housingStuff}/>
+                </div>
+            </div>
+            <div className="footer">
+                <Footer image={FooterLogo}/>
+            </div>
+        </div>
+        ) : <Navigate replace to="/404"/>
     )
 }
 
