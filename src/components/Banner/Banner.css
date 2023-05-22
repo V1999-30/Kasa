@@ -72,6 +72,10 @@
 }
 
 @media all and (min-width: 2560px){
+    #banner {
+        height: 350px;
+    }
+    
     #banner p{
     bottom: 12%;
     font-size: 78px;

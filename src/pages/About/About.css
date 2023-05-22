@@ -10,7 +10,7 @@
 
 @media all and (min-width: 320px) and (max-width: 767px){
     .About {
-        margin: 0px 6px;
+        margin: 20px 6px 0px;
     }
 
     #collapse-Fiabilité, #collapse-Respect, #collapse-Service, #collapse-Sécurité{
@@ -33,4 +33,10 @@
     #collapse-Fiabilité, #collapse-Respect, #collapse-Service, #collapse-Sécurité{
         margin: 25px 100px;
     }
-  }
+}
+
+@media all and (min-width:2560px){
+    #collapse-Fiabilité, #collapse-Respect, #collapse-Service, #collapse-Sécurité{
+        margin: 90px 100px;
+    }
+}
